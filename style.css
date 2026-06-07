@@ -391,9 +391,7 @@ header {
   gap: var(--spacing-sm);
   font-weight: bold;
 }
-.profile-meta span {
-  font-size: 0.8rem;
-}
+
 
 .user_card .stats-grid {
   display: grid;

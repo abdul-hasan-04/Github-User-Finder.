@@ -106,10 +106,10 @@ const displaySecondaryInfo = (user) => {
     metaData.push(`  <span>${user.location}</span>`);
   }
   if (user.email) {
-    metaData.push(`  <span>📧${user.email}</span>`);
+    metaData.push(`  <span>📧 ${user.email}</span>`);
   }
   if (user.blog) {
-    metaData.push(`  <span>🛜${user.blog}</span>`);
+    metaData.push(`  <span>🛜 ${user.blog}</span>`);
   }
   if (user.company) {
     metaData.push(`  <span>💼${user.company}</span>`);

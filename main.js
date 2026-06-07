@@ -117,13 +117,13 @@ const displaySecondaryInfo = (user) => {
   if (user.blog) {
     metaData.push(`  <div>
       <span>${user.blog}</span>
-      <i class = "fa-solid fa-location-dot"></i>
+      <i class="fa-solid fa-globe"></i>
       </div>`);
   }
   if (user.company) {
     metaData.push(`  <div>
       <span>${user.company}</span>
-      <i class = "fa-solid fa-location-dot"></i>
+      <i class = "fa-solid fa-briefcase"></i>
       </div>`);
   }
 

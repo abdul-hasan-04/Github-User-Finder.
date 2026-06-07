@@ -391,6 +391,11 @@ header {
   gap: var(--spacing-sm);
   font-weight: bold;
 }
+.profile-meta span {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
 
 .user_card .stats-grid {
   display: grid;

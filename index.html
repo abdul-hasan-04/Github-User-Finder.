@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Finder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="full-wrapper">
+      <header>
+        <nav class="navbar container">
+          <div class="logo">
+            <img src="/images/logo.png" alt="logo-image" />
+            <span class="logo-span">Github User Finder</span>
+          </div>
+        </nav>
+      </header>
+      <div class="all_container">
+        <div class="search-container">
+          <div class="search-header">
+            <h1 class="search-title">Discover GitHub Developers</h1>
+            <p class="search-description">
+              Search any GitHub user and explore their profile, repositories,
+              and contributions at a glance
+            </p>
+          </div>
+          <div class="search-form">
+            <form action="">
+              <div class="search-wrapper">
+                <div class="search-input">
+                  <input
+                    type="text"
+                    placeholder="search by username, e.g devmoha"
+                    class="input-field"
+                    autofocus
+                  />
+                  <i class="fa-solid fa-search"></i>
+                  <span class="error-displayer"></span>
+                </div>
+                <button class="search-btn" type="submit">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="user-card-container">
+          <div class="user_card">
+            <div class="profile-basic-info">
+              <div class="image-container">
+                <img src="./image2.jpg" id="avatar" class="avatar" alt="User avatar"/>
+              </div>
+              <div class="profile-info">
+                <h2 id="fullName">Abdulahi Mohamed Hassan</h2>
+                <div class="username" id="username">Abdul-hasan-04</div>
+                <p class="profile-bio" id="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="profile-meta" id="profileMeta">
+                </div>
+              </div>
+            </div>
+            <!-- Stats Grid -->
+            <div class="stats-grid" id="statsGrid">
+            </div>
+            
+            <div class="action-buttons">
+            </div>
+          </div>
+          <div class="error-container">
+            <div class="eror-text-holder">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p class="error-message"></p>
+            </div>
+          </div>
+        </div>
+        <div class="exploring-section">
+          <div class="find-image">🔍</div>
+          <div class="explore-text">
+            <h3>Start Exploring</h3>
+            <p class="explore-desc">
+              Enter a GitHub username above to discover user profiles and their
+              contribution statistics
+            </p>
+          </div>
+        </div>
+        <div class="loading-container">
+           <div class="spinner">
+           </div>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

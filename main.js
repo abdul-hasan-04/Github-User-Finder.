@@ -103,24 +103,28 @@ const displaySecondaryInfo = (user) => {
   let metaData = [];
 
   if (user.location) {
-    metaData.push(`  <span> ${user.location}
+    metaData.push(` <div>
+      <span>${user.location}</span>
       <i class = "fa-solid fa-location-dot"></i>
-      </span>`);
+      </div>`);
   }
   if (user.email) {
-    metaData.push(`  <span>${user.email}
-      <i class = "fa-solid fa-circle-envelope"></i>  
-    </span>`);
+    metaData.push(` <div>
+      <span>${user.email}</span>
+      <i class = "fa-solid fa-circle-envelope"></i>
+      </div>`);
   }
   if (user.blog) {
-    metaData.push(`  <span>${user.blog}
-      <i class="fa-solid fa-globe"></i>
-    </span>`);
+    metaData.push(`  <div>
+      <span>${user.blog}</span>
+      <i class = "fa-solid fa-location-dot"></i>
+      </div>`);
   }
   if (user.company) {
-    metaData.push(`  <span>${user.company}
-      <i class = "fa-solid fa-briefcase"></i>    
-  </span>`);
+    metaData.push(`  <div>
+      <span>${user.company}</span>
+      <i class = "fa-solid fa-location-dot"></i>
+      </div>`);
   }
 
   metaProfileData.innerHTML = metaData.map((user) => user).join("");

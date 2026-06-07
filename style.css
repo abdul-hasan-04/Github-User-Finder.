@@ -387,11 +387,17 @@ header {
 
 .profile-info .profile-meta {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--spacing-sm);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
   font-weight: bold;
 }
+.profile-meta span {
+  font-size: 0.9rem;
+}
 
+.profile-meta i {
+  color: #309701;
+}
 
 .user_card .stats-grid {
   display: grid;
@@ -490,9 +496,6 @@ header {
   }
   .profile-basic-info .profile-info{
     flex: 1;
-  }
-  .profile-info .profile-meta {
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .search-btn{

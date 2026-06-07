@@ -112,7 +112,7 @@ const displaySecondaryInfo = (user) => {
     metaData.push(`  <span>🛜 ${user.blog}</span>`);
   }
   if (user.company) {
-    metaData.push(`  <span>💼${user.company}</span>`);
+    metaData.push(`  <span>💼 ${user.company}</span>`);
   }
 
   metaProfileData.innerHTML = metaData.map((user) => user).join("");
